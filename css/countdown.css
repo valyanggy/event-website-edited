@@ -1,0 +1,141 @@
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
+}
+
+body {
+  /*background-image: url("../img/space.jpg");*/
+  background-color: black;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Title and Description */
+
+.countdown {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2em;
+  font-size: 100px; 
+}
+
+.year{
+  font-family:"Xanh Mono";
+  font-size:37px;
+  font-style: italic;
+}
+
+
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
+  position: absolute;
+  /*display: block;*/
+  margin:auto;
+  /*left: 36%;*/
+  /*top:15%;*/
+  z-index: 2;
+  text-align: center;
+  font-family:"Xanh Mono";
+  font-size: 4vw;
+}
+
+.page-description {
+  font-size: 1rem;
+  padding: 5px;
+}
+#demo{
+    font-size: 8vw;
+    padding:10px;
+  }
+
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  font-family:"Work sans";
+}
+
+.gallery-item {
+  margin: 20px;
+  padding:10px;
+}
+
+.gallery-text {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 0.3em;
+  font-size: 4vw; 
+  font-family:"Xanh Mono";
+}
+
+.click {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 0.3em;
+  font-size: 2vw; 
+  font-family:"Xanh Mono";
+}
+
+
+.gallery-item .thumbnail {
+  width: 80%;
+  /*border: 2px solid GhostWhite;*/
+  /*border-radius: 4px;*/
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:480px), (orientation: portrait) {
+  .page-title{
+    width:270px;
+  }
+  .gallery-item .thumbnail{
+    width: 95%;
+  }
+
+
+}
+
+@media only screen and (min-resolution: 150dpi) {
+.logo{
+
+  background-image: url("../img/spaceship@2x.png");
+}
+}
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px){
+  .page-description{
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title, .page-description {
+  float: left;
+    width: 20em;
+}
+ 
+.page-description {
+    text-align: left;
+}
+}
